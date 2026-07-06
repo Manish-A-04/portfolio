@@ -5,8 +5,8 @@ export default function Footer() {
         <div className="font-display text-2xl text-accent font-bold">M.</div>
         <p className="font-body-md text-fg/70">Designed & Built by Manish © 2024</p>
         <div className="flex gap-6">
-          <a className="font-display font-bold uppercase tracking-widest text-fg/70 hover:text-accent transition-colors text-sm" href="#">GitHub</a>
-          <a className="font-display font-bold uppercase tracking-widest text-fg/70 hover:text-accent transition-colors text-sm" href="#">LinkedIn</a>
+          <a className="font-display font-bold uppercase tracking-widest text-fg/70 hover:text-accent transition-colors text-sm" href="https://github.com/Manish-A-04" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a className="font-display font-bold uppercase tracking-widest text-fg/70 hover:text-accent transition-colors text-sm" href="https://linkedin.com/in/manish-a-47a791326" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </footer>

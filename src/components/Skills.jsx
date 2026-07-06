@@ -2,52 +2,47 @@ export default function Skills() {
   return (
     <section className="py-section-gap border-t border-fg/30" id="skills">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-      <h2 className="font-display font-extrabold text-headline-lg-mobile md:text-headline-lg mb-20 text-center">Technical Arsenal</h2>
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-12">
-        <div>
-          <h3 className="font-display font-bold text-2xl mb-6">Languages</h3>
-          <ul className="space-y-3 font-body-md text-fg/80">
-            <li>Python</li>
-            <li>SQL</li>
-            <li>C++</li>
-            <li>JavaScript</li>
-          </ul>
+      <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-5xl mb-20">Technical Arsenal</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="break-words">
+          <h3 className="font-display font-bold text-2xl md:text-4xl text-accent mb-6">Languages</h3>
+          <div className="flex flex-wrap gap-4">
+            {['Python', 'SQL', 'JavaScript'].map(skill => (
+              <span key={skill} className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 font-body-lg text-lg md:text-xl font-bold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
-        <div>
-          <h3 className="font-display font-bold text-2xl mb-6">AI/ML</h3>
-          <ul className="space-y-3 font-body-md text-fg/80">
-            <li>PyTorch</li>
-            <li>Scikit-Learn</li>
-            <li>HuggingFace</li>
-            <li>LangChain</li>
-            <li>Neo4j</li>
-          </ul>
+        <div className="break-words">
+          <h3 className="font-display font-bold text-2xl md:text-4xl text-accent mb-6">Frameworks & Libraries</h3>
+          <div className="flex flex-wrap gap-4">
+            {['PyTorch', 'Hugging Face', 'LangChain', 'FastAPI', 'ReactJS', 'SQLAlchemy', 'Gradio'].map(skill => (
+              <span key={skill} className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 font-body-lg text-lg md:text-xl font-bold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
-        <div>
-          <h3 className="font-display font-bold text-2xl mb-6">Backend</h3>
-          <ul className="space-y-3 font-body-md text-fg/80">
-            <li>FastAPI</li>
-            <li>Django</li>
-            <li>PostgreSQL</li>
-            <li>Redis</li>
-          </ul>
+        <div className="break-words">
+          <h3 className="font-display font-bold text-2xl md:text-4xl text-accent mb-6">Core Areas</h3>
+          <div className="flex flex-wrap gap-4">
+            {['Natural Language Processing', 'Generative AI', 'Retrieval-Augmented Generation (RAG)', 'Model Fine-tuning', 'Sequence Modeling', 'Predictive Modeling'].map(skill => (
+              <span key={skill} className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 font-body-lg text-lg md:text-xl font-bold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
-        <div>
-          <h3 className="font-display font-bold text-2xl mb-6">Frontend</h3>
-          <ul className="space-y-3 font-body-md text-fg/80">
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-display font-bold text-2xl mb-6">Tools</h3>
-          <ul className="space-y-3 font-body-md text-fg/80">
-            <li>Docker</li>
-            <li>AWS</li>
-            <li>Git</li>
-            <li>CI/CD</li>
-          </ul>
+        <div className="break-words">
+          <h3 className="font-display font-bold text-2xl md:text-4xl text-accent mb-6">Tools & Platforms</h3>
+          <div className="flex flex-wrap gap-4">
+            {['Ollama', 'Neo4j', 'Docker', 'Git & GitHub', 'MLflow', 'PySpark', 'Google Colab'].map(skill => (
+              <span key={skill} className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 font-body-lg text-lg md:text-xl font-bold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
       </div>
