@@ -43,8 +43,8 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-section-gap border-t border-fg/30" id="projects">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <section className="py-section-gap border-t border-fg/30 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop xl:pr-36" id="projects">
+      <div>
         <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-16">Select Projects</h2>
         <div className="space-y-16 max-w-5xl">
           {projects.map((project, idx) => (

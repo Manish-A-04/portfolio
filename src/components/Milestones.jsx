@@ -1,6 +1,6 @@
 export default function Milestones() {
   return (
-    <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-fg/30" id="milestones">
+    <section className="py-section-gap px-margin-mobile md:px-margin-desktop xl:pr-36 max-w-container-max mx-auto border-t border-fg/30" id="milestones">
       <div>
         <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-16">Milestones</h2>
         <div className="space-y-10 max-w-4xl">

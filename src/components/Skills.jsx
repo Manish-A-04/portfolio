@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
-    <section className="py-section-gap border-t border-fg/30" id="skills">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <section className="py-section-gap border-t border-fg/30 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop xl:pr-36" id="skills">
+      <div>
       <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-16">Technical Arsenal</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
         <div className="break-words">

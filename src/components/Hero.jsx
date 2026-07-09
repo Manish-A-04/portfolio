@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <header id="intro" className="pt-40 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto min-h-screen flex flex-col justify-center">
+    <header id="intro" className="pt-40 pb-section-gap px-margin-mobile md:px-margin-desktop xl:pr-36 max-w-container-max mx-auto min-h-screen flex flex-col justify-center">
       <div className="max-w-4xl">
         <h1 className="font-display tracking-wide font-extrabold text-4xl md:text-6xl mb-6">
           Manish. A <br />
