@@ -42,8 +42,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  const closeMenu = () => {
     setIsOpen(false);
   };
 
@@ -59,7 +58,7 @@ export default function Navbar() {
           <a
             key={id}
             href={`#${id}`}
-            onClick={(e) => { e.preventDefault(); scrollTo(id); }}
+            onClick={closeMenu}
             className={`${linkBase} ${active === id ? desktopActive : desktopIdle}`}
           >
             {label}
@@ -71,7 +70,7 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 w-full z-[9999] bg-black border-b border-white/20 xl:hidden flex justify-between items-center px-6 h-16 shadow-2xl">
         <a
           href="#intro"
-          onClick={(e) => { e.preventDefault(); scrollTo('intro'); }}
+          onClick={closeMenu}
           className="font-display tracking-wide text-xl font-bold text-accent"
         >
           M.
@@ -100,7 +99,7 @@ export default function Navbar() {
             <a
               key={id}
               href={`#${id}`}
-              onClick={(e) => { e.preventDefault(); scrollTo(id); }}
+              onClick={closeMenu}
               className={`font-display tracking-widest font-bold uppercase text-2xl transition-colors duration-200 ${
                 active === id ? 'text-accent' : 'text-fg/60 hover:text-accent'
               }`}

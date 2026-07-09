@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   return (
-    <div className="font-body-md">
+    <div className="font-body-md overflow-x-hidden w-full">
       <BackgroundVideo />
       <Navbar />
       <main>
