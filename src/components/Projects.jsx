@@ -4,40 +4,40 @@ export default function Projects() {
       title: "StudyGraphRAG",
       tech: ['FastAPI', 'SQLAlchemy', 'React', 'Neo4j', 'GraphRAG', 'Gemini'],
       link: "https://github.com/Manish-A-04",
-      desc: "Graph-aware study assistant that transforms PDF documents into a Neo4j knowledge graph, enabling graph-aware retrieval for contextual question answering.",
+      desc: "An AI-powered study assistant that converts PDF documents into a Neo4j knowledge graph, enabling context-aware retrieval and conversational question answering.",
       points: [
-        "Ingestion Pipeline: Designed an asynchronous pipeline to extract entities, relationships, and embeddings, allowing efficient background processing of large study materials.",
-        "Core API Integration: Developed FastAPI APIs for document upload, graph management, and conversational querying by integrating LLM-based answer generation."
+        "Knowledge Graph Pipeline: Built an asynchronous ingestion pipeline to extract entities, relationships, and embeddings, enabling efficient processing of large study materials.",
+        "Backend & Retrieval: Developed FastAPI APIs for document upload, graph management, and GraphRAG-powered conversational querying with LLM-based answer generation."
       ]
     },
     {
-      title: "SQL Easy Query + Gemma 3",
+      title: "SQL Easy Query",
       tech: ['PyTorch', 'Ollama', 'FastAPI', 'React', 'SQLGlot'],
       link: "https://github.com/Manish-A-04",
-      desc: "A full-stack AI database assistant that converts natural language into SQL queries across SQLite, PostgreSQL, MySQL, SQL Server, and Oracle.",
+      desc: "A full-stack AI database assistant that translates natural language into SQL queries for SQLite, PostgreSQL, MySQL, SQL Server, and Oracle.",
       points: [
-        "Model Fine-Tuning: Fine-tuned Gemma 3 4B for Text-to-SQL using 4-bit QLoRA on the sql-create-context dataset and deployed locally using Ollama.",
-        "Query Reliability: Improved query reliability by implementing SQLGlot-based validation, automatic query correction, and AI-generated summaries."
+        "LLM Fine-Tuning: Fine-tuned Gemma 3 4B for Text-to-SQL using 4-bit QLoRA on the sql-create-context dataset and deployed the model locally with Ollama.",
+        "Reliable SQL Generation: Improved query accuracy using SQLGlot-based validation, automatic query correction, and AI-generated result summaries."
       ]
     },
     {
-      title: "Speech-to-Speech AI",
+      title: "Local Speech-to-Speech AI Assistant",
       tech: ['Whisper', 'Ollama', 'Kokoro TTS', 'Gradio', 'PyAudio'],
       link: "https://github.com/Manish-A-04",
-      desc: "A fully local speech-to-speech AI assistant integrating Whisper for speech recognition, Ollama for LLM inference, and Kokoro TTS for voice synthesis.",
+      desc: "A fully local speech-to-speech AI assistant that combines Whisper, Ollama, and Kokoro TTS for private, real-time voice conversations without cloud APIs.",
       points: [
-        "Real-Time Pipeline: Built a real-time audio pipeline to record speech, transcribe audio, generate streamed LLM responses, and synthesize natural voice output.",
-        "Interactive Interface: Created an interactive Gradio interface for seamless voice conversations without relying on external cloud APIs."
+        "Real-Time Voice Pipeline: Built a streaming pipeline for speech recording, transcription, LLM inference, and natural voice synthesis with low latency.",
+        "Interactive Application: Developed a Gradio interface for seamless end-to-end voice interactions while keeping all inference completely local."
       ]
     },
     {
-      title: "Enta Classification",
+      title: "Enta Intent & Slot Classification",
       tech: ['PyTorch', 'Transformers', 'SentencePiece', 'Streamlit'],
       link: "https://github.com/Manish-A-04",
-      desc: "A bilingual (English & Tamil) joint intent classification and slot filling model built from scratch in PyTorch using the MASSIVE multilingual dataset.",
+      desc: "A bilingual (English & Tamil) joint intent classification and slot filling system built from scratch in PyTorch using the MASSIVE multilingual dataset.",
       points: [
-        "Architecture: Designed a shared Transformer encoder with task-specific heads, attention-based intent pooling, and CRF-based slot decoding.",
-        "Pipeline Implementation: Implemented complete training, evaluation, and inference pipelines, enabling real-time multilingual intent and entity prediction."
+        "Model Architecture: Designed a shared Transformer encoder with task-specific heads, attention-based intent pooling, and CRF-based slot decoding.",
+        "Training & Inference Pipeline: Implemented complete training, evaluation, and real-time inference pipelines for multilingual intent detection and entity extraction."
       ]
     }
   ];
@@ -51,11 +51,11 @@ export default function Projects() {
             <div key={idx} className="flex flex-col md:flex-row justify-between gap-8 pb-12 border-b border-fg/10 last:border-b-0">
               <div className="flex-1">
                 <h3 className="font-display tracking-wide font-bold text-xl md:text-2xl mb-4">{project.title}</h3>
-                
+
                 <p className="font-body-lg text-base md:text-lg font-normal leading-[1.7] text-fg/70 mb-6">
                   {project.desc}
                 </p>
-                
+
                 <ul className="space-y-3 mb-8">
                   {project.points.map((point, pIdx) => {
                     const [boldPart, restPart] = point.split(': ');
@@ -75,10 +75,10 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="md:text-right mt-2 md:mt-0">
-                <a 
-                  className="inline-flex items-center gap-2 font-display font-bold uppercase tracking-widest text-accent hover:opacity-80 transition-colors text-sm" 
+                <a
+                  className="inline-flex items-center gap-2 font-display font-bold uppercase tracking-widest text-accent hover:opacity-80 transition-colors text-sm"
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
