@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <header id="intro" className="pt-40 pb-section-gap px-margin-mobile md:px-margin-desktop xl:pr-36 max-w-container-max mx-auto min-h-screen flex flex-col justify-center">
-      <div className="max-w-4xl">
+    <header id="intro" className="w-full px-margin-mobile md:px-margin-desktop min-h-screen flex flex-col justify-center">
+      <div className="max-w-6xl mx-auto w-full pt-40 pb-section-gap">
         <h1 className="font-display tracking-wide font-extrabold text-4xl md:text-6xl mb-6">
           Manish. A <br />
           <span className="text-fg/70">AI Enthusiast.</span>

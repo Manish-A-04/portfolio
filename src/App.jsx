@@ -39,7 +39,7 @@ function App() {
     <div className="font-body-md overflow-x-hidden w-full">
       <BackgroundVideo />
       <Navbar />
-      <main>
+      <main className="xl:pr-[240px]">
         <Hero />
         <About />
         <Projects />

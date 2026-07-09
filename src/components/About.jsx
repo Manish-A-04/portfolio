@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section className="py-section-gap border-t border-fg/30 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop xl:pr-36" id="about">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
+    <section className="w-full px-margin-mobile md:px-margin-desktop" id="about">
+      <div className="py-section-gap border-t border-fg/30 max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
         <div className="md:col-span-7">
           <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-8">About Me</h2>
           <div className="space-y-6 text-fg/80 font-body-lg text-base md:text-lg font-normal leading-[1.75]">

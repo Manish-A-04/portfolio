@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section className="py-section-gap border-t border-fg/30 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop xl:pr-36 text-left md:text-left" id="contact">
-      <div>
+    <section className="w-full px-margin-mobile md:px-margin-desktop" id="contact">
+      <div className="py-section-gap border-t border-fg/30 max-w-6xl mx-auto w-full text-left md:text-left">
         <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-8">Let's Connect</h2>
         <p className="font-body-lg text-base md:text-lg font-normal leading-[1.75] text-fg/70 max-w-2xl mb-12">
           I'm always interested in hearing about new projects, technical challenges, or research collaborations. 
