@@ -19,14 +19,14 @@ function App() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('opacity-100');
-          entry.target.classList.remove('opacity-0', 'translate-y-10');
+          entry.target.classList.remove('opacity-0');
         }
       });
     }, observerOptions);
 
     const sections = document.querySelectorAll('section, header[id]');
     sections.forEach(section => {
-      section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+      section.classList.add('transition-opacity', 'duration-1000', 'opacity-0');
       observer.observe(section);
     });
 
