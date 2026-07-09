@@ -48,7 +48,7 @@ export default function Projects() {
   return (
     <section className="w-full px-margin-mobile md:px-margin-desktop" id="projects">
       <div className="py-section-gap border-t border-fg/30 max-w-6xl mx-auto w-full">
-        <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-16">Select Projects</h2>
+        <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-16">Projects</h2>
         <div className="space-y-16 max-w-5xl">
           {projects.map((project, idx) => (
             <div key={idx} className="flex flex-col md:flex-row justify-between gap-8 pb-12 border-b border-fg/10 last:border-b-0">
