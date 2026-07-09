@@ -3,7 +3,7 @@ export default function Projects() {
     {
       title: "StudyGraphRAG",
       tech: ['FastAPI', 'SQLAlchemy', 'React', 'Neo4j', 'GraphRAG', 'Gemini'],
-      link: "https://github.com/Manish-A-04",
+      link: "https://github.com/Manish-A-04/StudyGraphRAG",
       desc: "An AI-powered study assistant that converts PDF documents into a Neo4j knowledge graph, enabling context-aware retrieval and conversational question answering.",
       points: [
         "Knowledge Graph Pipeline: Built an asynchronous ingestion pipeline to extract entities, relationships, and embeddings, enabling efficient processing of large study materials.",
@@ -13,7 +13,10 @@ export default function Projects() {
     {
       title: "SQL Easy Query",
       tech: ['PyTorch', 'Ollama', 'FastAPI', 'React', 'SQLGlot'],
-      link: "https://github.com/Manish-A-04",
+      link: [
+        { label: "App Repo", url: "https://github.com/Manish-A-04/sql-easy-query" },
+        { label: "Finetuning Script", url: "https://github.com/Manish-A-04/gemma3-finetuning" }
+      ],
       desc: "A full-stack AI database assistant that translates natural language into SQL queries for SQLite, PostgreSQL, MySQL, SQL Server, and Oracle.",
       points: [
         "LLM Fine-Tuning: Fine-tuned Gemma 3 4B for Text-to-SQL using 4-bit QLoRA on the sql-create-context dataset and deployed the model locally with Ollama.",
@@ -23,7 +26,7 @@ export default function Projects() {
     {
       title: "Local Speech-to-Speech AI Assistant",
       tech: ['Whisper', 'Ollama', 'Kokoro TTS', 'Gradio', 'PyAudio'],
-      link: "https://github.com/Manish-A-04",
+      link: "https://github.com/Manish-A-04/Speech-to-Speech",
       desc: "A fully local speech-to-speech AI assistant that combines Whisper, Ollama, and Kokoro TTS for private, real-time voice conversations without cloud APIs.",
       points: [
         "Real-Time Voice Pipeline: Built a streaming pipeline for speech recording, transcription, LLM inference, and natural voice synthesis with low latency.",
@@ -33,7 +36,7 @@ export default function Projects() {
     {
       title: "Enta Intent & Slot Classification",
       tech: ['PyTorch', 'Transformers', 'SentencePiece', 'Streamlit'],
-      link: "https://github.com/Manish-A-04",
+      link: "https://github.com/Manish-A-04/Enta-intent-and-slot-prediction",
       desc: "A bilingual (English & Tamil) joint intent classification and slot filling system built from scratch in PyTorch using the MASSIVE multilingual dataset.",
       points: [
         "Model Architecture: Designed a shared Transformer encoder with task-specific heads, attention-based intent pooling, and CRF-based slot decoding.",
@@ -76,15 +79,33 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className="md:text-right mt-2 md:mt-0">
-                <a
-                  className="inline-flex items-center gap-2 font-display font-bold uppercase tracking-widest text-accent hover:opacity-80 transition-colors text-sm"
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub &rarr;
-                </a>
+              <div className="md:text-right mt-6 md:mt-0 flex flex-col md:items-end gap-4">
+                {Array.isArray(project.link) ? (
+                  project.link.map((item, i) => {
+                    const url = typeof item === 'object' ? item.url : item;
+                    const label = typeof item === 'object' ? item.label : 'GitHub';
+                    return (
+                      <a
+                        key={i}
+                        className="inline-flex items-center gap-2 font-display font-bold uppercase tracking-widest text-accent hover:opacity-80 transition-colors text-sm"
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {label} &rarr;
+                      </a>
+                    );
+                  })
+                ) : (
+                  <a
+                    className="inline-flex items-center gap-2 font-display font-bold uppercase tracking-widest text-accent hover:opacity-80 transition-colors text-sm"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub &rarr;
+                  </a>
+                )}
               </div>
             </div>
           ))}
