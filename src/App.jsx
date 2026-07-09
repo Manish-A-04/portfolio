@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Milestones from './components/Milestones';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+
 import BackgroundVideo from './components/BackgroundVideo';
 
 function App() {
@@ -65,14 +65,14 @@ function App() {
     <div className="font-body-md">
       <BackgroundVideo />
       <Navbar />
-      <main className="md:pr-32">
+      <main>
         <Hero />
         <About />
         <Projects />
         <Skills />
         <Milestones />
         <Contact />
-        <Footer />
+
       </main>
     </div>
   );

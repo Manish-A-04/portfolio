@@ -17,7 +17,7 @@
   --radius-full: 9999px;
 
   --spacing-gutter: 24px;
-  --spacing-section-gap: 128px;
+  --spacing-section-gap: 96px;
   --spacing-margin-desktop: 64px;
   --spacing-container-max: 1200px;
   --spacing-margin-mobile: 20px;
@@ -49,7 +49,7 @@
   --text-body-md--font-weight: 400;
 
   --text-metadata: 12px;
-  --text-metadata--line-height: 1.0;
+  --text-metadata--line-height: 1.4;
   --text-metadata--letter-spacing: 0.05em;
   --text-metadata--font-weight: 400;
 
@@ -74,6 +74,7 @@
     color: var(--color-fg);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
     overflow-x: hidden;
     width: 100%;
   }
