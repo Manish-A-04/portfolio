@@ -14,8 +14,14 @@ export default function Hero() {
           <a className="bg-accent text-bg px-8 py-4 rounded-lg font-display tracking-widest font-bold uppercase text-sm hover:opacity-80 transition-opacity duration-300" href="#projects">
             View Projects
           </a>
-          <a className="border border-fg/30 text-accent px-8 py-4 rounded-lg font-display tracking-widest font-bold uppercase text-sm hover:border-accent transition-colors duration-300" href="/webres.pdf" target="_blank" rel="noopener noreferrer">
-            Resume
+          <a
+            className="border border-fg/30 text-accent px-8 py-4 rounded-lg font-display tracking-widest font-bold uppercase text-sm hover:border-accent transition-colors duration-300 inline-flex items-center gap-2"
+            href="/res.pdf"
+            download="Manish_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Resume
           </a>
         </div>
       </div>

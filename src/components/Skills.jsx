@@ -7,7 +7,7 @@ export default function Skills() {
           <div className="break-words">
             <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">Languages</h3>
             <div className="flex flex-wrap gap-3">
-              {['Python', 'SQL', 'JavaScript'].map(skill => (
+              {['Python', 'JavaScript', 'SQL'].map(skill => (
                 <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
                   {skill}
                 </span>
@@ -17,7 +17,7 @@ export default function Skills() {
           <div className="break-words">
             <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">Frameworks &amp; Libraries</h3>
             <div className="flex flex-wrap gap-3">
-              {['PyTorch', 'Hugging Face', 'LangChain', 'FastAPI', 'ReactJS', 'SQLAlchemy', 'Gradio'].map(skill => (
+              {['ReactJS', 'FastAPI', 'SQLAlchemy', 'TailwindCSS', 'PyTorch', 'Hugging Face', 'LangChain', 'Gradio'].map(skill => (
                 <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
                   {skill}
                 </span>
@@ -27,7 +27,7 @@ export default function Skills() {
           <div className="break-words">
             <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">Core Areas</h3>
             <div className="flex flex-wrap gap-3">
-              {['Natural Language Processing', 'Generative AI', 'Retrieval-Augmented Generation (RAG)', 'Model Fine-tuning', 'Sequence Modeling', 'Predictive Modeling'].map(skill => (
+              {['Full-Stack Web Development', 'RESTful API Design', 'WebSocket', 'WebRTC', 'Authentication & Authorization', 'Natural Language Processing', 'Generative AI', 'Retrieval-Augmented Generation (RAG)', 'Model Fine-tuning'].map(skill => (
                 <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
                   {skill}
                 </span>
@@ -37,7 +37,7 @@ export default function Skills() {
           <div className="break-words">
             <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">Tools &amp; Platforms</h3>
             <div className="flex flex-wrap gap-3">
-              {['Ollama', 'Neo4j', 'Docker', 'Git & GitHub', 'MLflow', 'PySpark', 'Google Colab'].map(skill => (
+              {['Git & GitHub', 'Docker', 'PostgreSQL', 'Firebase', 'Neo4j', 'Ollama', 'MLflow', 'PySpark', 'Google Colab'].map(skill => (
                 <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
                   {skill}
                 </span>
