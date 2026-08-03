@@ -6,7 +6,7 @@ export default function About() {
           <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-8">About Me</h2>
           <div className="space-y-6 text-fg/80 font-body-lg text-base md:text-lg font-normal leading-[1.75]">
             <p>
-              I am a Full Stack &amp; AI Engineer passionate about building modern, scalable web applications and integrating production-ready artificial intelligence. My work spans designing intuitive frontend interfaces, engineering resilient backend APIs and database architectures, and embedding intelligent capabilities like LLMs, RAG pipelines, and automated AI workflows.
+              I am a fresher passionate about building modern, scalable web applications and integrating production-ready artificial intelligence. My work spans designing intuitive frontend interfaces, engineering resilient backend APIs and database architectures, and embedding intelligent capabilities like LLMs, RAG pipelines, and automated AI workflows.
             </p>
             <p>
               Whether crafting full-stack web solutions or optimizing retrieval systems and intelligent agents, I prioritize high performance, maintainable code, and clean architecture. I believe the most impactful applications emerge when exceptional user experiences meet state-of-the-art AI technology.
