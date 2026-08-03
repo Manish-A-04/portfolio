@@ -6,10 +6,10 @@ export default function About() {
           <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-8">About Me</h2>
           <div className="space-y-6 text-fg/80 font-body-lg text-base md:text-lg font-normal leading-[1.75]">
             <p>
-              My journey in engineering is driven by the conviction that AI should be practical, explainable, and production-ready. I focus on building systems where intelligence isn't just a buzzword, but a core architectural layer that solves real-world data challenges.
+              I am a Full Stack &amp; AI Engineer passionate about building modern, scalable web applications and integrating production-ready artificial intelligence. My work spans designing intuitive frontend interfaces, engineering resilient backend APIs and database architectures, and embedding intelligent capabilities like LLMs, RAG pipelines, and automated AI workflows.
             </p>
             <p>
-              From architecting complex RAG pipelines to optimizing small-scale classification models, I prioritize efficiency and accuracy. I believe the most successful AI implementations are those that integrate seamlessly with existing human workflows, augmenting capabilities rather than replacing them.
+              Whether crafting full-stack web solutions or optimizing retrieval systems and intelligent agents, I prioritize high performance, maintainable code, and clean architecture. I believe the most impactful applications emerge when exceptional user experiences meet state-of-the-art AI technology.
             </p>
           </div>
         </div>
@@ -27,8 +27,9 @@ export default function About() {
           <div>
             <h4 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-3">Current Focus</h4>
             <ul className="space-y-2">
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">LLM Fine-tuning</li>
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Graph-based RAG</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Full-Stack Web Development</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">LLM Agents &amp; RAG Pipelines</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">AI Integration &amp; Cloud Deployment</li>
             </ul>
           </div>
 
