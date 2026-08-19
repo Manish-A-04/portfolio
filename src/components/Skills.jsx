@@ -17,7 +17,7 @@ export default function Skills() {
           <div className="break-words">
             <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">Frameworks &amp; Libraries</h3>
             <div className="flex flex-wrap gap-3">
-              {['ReactJS', 'FastAPI', 'SQLAlchemy', 'TailwindCSS', 'PyTorch', 'Hugging Face', 'LangChain', 'Gradio'].map(skill => (
+              {['ReactJS', 'FastAPI', 'SQLAlchemy', 'PyTorch', 'LangChain'].map(skill => (
                 <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
                   {skill}
                 </span>
@@ -27,7 +27,7 @@ export default function Skills() {
           <div className="break-words">
             <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">Core Areas</h3>
             <div className="flex flex-wrap gap-3">
-              {['Full-Stack Web Development', 'RESTful API Design', 'WebSocket', 'WebRTC', 'Authentication & Authorization', 'Natural Language Processing', 'Generative AI', 'Retrieval-Augmented Generation (RAG)', 'Model Fine-tuning'].map(skill => (
+              {['Full Stack Web Development', 'RESTful API Design', 'WebSocket', 'Authentication & Authorization', 'Application Debugging & Troubleshooting', 'Machine Learning'].map(skill => (
                 <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
                   {skill}
                 </span>
@@ -37,7 +37,17 @@ export default function Skills() {
           <div className="break-words">
             <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">Tools &amp; Platforms</h3>
             <div className="flex flex-wrap gap-3">
-              {['Git & GitHub', 'Docker', 'PostgreSQL', 'Firebase', 'Neo4j', 'Ollama', 'MLflow', 'PySpark', 'Google Colab'].map(skill => (
+              {['Git & GitHub', 'Docker', 'Firebase', 'Neo4j', 'Postman'].map(skill => (
+                <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="break-words md:col-span-2">
+            <h3 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-5">IT Fundamentals</h3>
+            <div className="flex flex-wrap gap-3">
+              {['Operating Systems (Windows, Linux basics)', 'Networking Basics (TCP/IP, DNS)'].map(skill => (
                 <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 font-body-lg text-base font-semibold text-fg/90 hover:border-accent/50 hover:bg-white/10 transition-colors cursor-default">
                   {skill}
                 </span>

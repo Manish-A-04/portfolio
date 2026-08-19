@@ -6,30 +6,31 @@ export default function About() {
           <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-8">About Me</h2>
           <div className="space-y-6 text-fg/80 font-body-lg text-base md:text-lg font-normal leading-[1.75]">
             <p>
-              I am a fresher passionate about building modern, scalable web applications and integrating production-ready artificial intelligence. My work spans designing intuitive frontend interfaces, engineering resilient backend APIs and database architectures, and embedding intelligent capabilities like LLMs, RAG pipelines, and automated AI workflows.
+              I'm a B.Tech graduate in Artificial Intelligence and Data Science who likes building software end-to-end. I enjoy working across the whole stack—from building clean React frontends to designing FastAPI backends, databases, and AI pipelines.
             </p>
             <p>
-              Whether crafting full-stack web solutions or optimizing retrieval systems and intelligent agents, I prioritize high performance, maintainable code, and clean architecture. I believe the most impactful applications emerge when exceptional user experiences meet state-of-the-art AI technology.
+              Whether I'm shipping a new feature, tracing a bug back to its root cause, or setting up background tasks, I like getting under the hood to understand how everything works. I'm eager to bring this hands-on problem-solving approach to full-stack, AI, and support roles.
             </p>
           </div>
         </div>
         <div className="md:col-span-5 bg-white/5 border border-white/10 rounded-3xl p-8 space-y-8 mt-12 md:mt-0 self-start">
           <div>
             <h4 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-3">Education</h4>
-            <p className="font-body-lg text-lg md:text-xl font-semibold">Kings Engineering College</p>
-            <p className="font-body-lg text-base font-normal text-fg/70 mt-1">B.Tech. AI and Data Science</p>
-            <p className="font-body-lg text-sm font-normal text-fg/50 mt-1">2022 – 2026 &nbsp;|&nbsp; CGPA: 8.3/10</p>
+            <p className="font-body-lg text-lg md:text-xl font-semibold">Kings Engineering College - Chennai</p>
+            <p className="font-body-lg text-base font-normal text-fg/70 mt-1">B.Tech. in Artificial Intelligence and Data Science</p>
+            <p className="font-body-lg text-sm font-normal text-fg/50 mt-1">Sep 2022 – Apr 2026 &nbsp;|&nbsp; CGPA: 8.3/10</p>
           </div>
           <div>
             <h4 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-3">Location</h4>
             <p className="font-body-lg text-lg md:text-xl font-semibold">Chennai, India</p>
           </div>
           <div>
-            <h4 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-3">Current Focus</h4>
+            <h4 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-3">Core Competencies</h4>
             <ul className="space-y-2">
               <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Full-Stack Web Development</li>
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">LLM Agents &amp; RAG Pipelines</li>
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">AI Integration &amp; Cloud Deployment</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">AI Engineering &amp; RAG Systems</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Application Debugging &amp; Troubleshooting</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">IT &amp; Systems Fundamentals (OS, TCP/IP)</li>
             </ul>
           </div>
 
