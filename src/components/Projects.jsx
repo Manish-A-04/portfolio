@@ -1,46 +1,43 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Real-Time Chat Application",
-      tech: ['FastAPI', 'SQLAlchemy', 'PostgreSQL', 'WebSocket', 'WebRTC', 'React', 'TailwindCSS', 'Axios'],
-      link: "https://github.com/Manish-A-04/chat-app",
-      desc: "Built a full-stack messaging application supporting one-to-one and group chats, voice/video calls, and 24-hour status stories, similar in scope to WhatsApp.",
+      title: "Delivery Delay Prediction",
+      tech: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'LightGBM', 'CatBoost', 'Optuna', 'SHAP', 'MLflow', 'Streamlit'],
+      link: "https://github.com/Manish-A-04/olist-late-delivery-prediction",
+      desc: "Analyzed e-commerce order and shipping data to identify drivers of late deliveries, from raw data cleaning through ensemble modeling to a deployable Streamlit app.",
       points: [
-        "WebSocket & WebRTC Signaling: Implemented a single persistent WebSocket connection to handle typing indicators, online presence, read receipts, and WebRTC call signaling for voice and video calls.",
-        "Security & Access Control: Designed JWT-based authentication with refresh token rotation, role-based group membership, and granular per-user privacy controls."
+        "Modeling & Tuning: Trained and compared XGBoost, LightGBM, CatBoost, and Random Forest classifiers, tuned with Optuna and tracked across every run in MLflow for reproducibility.",
+        "Explainability & Deployment: Applied SHAP to surface the features driving predictions, then packaged the model into a Streamlit app for real-time inference on new orders."
       ]
     },
     {
-      title: "KM Gurukulam – School Website (Live)",
-      tech: ['Next.js', 'Firebase', 'Supabase', 'TailwindCSS', 'Radix UI'],
-      link: [
-        { label: "github", url: "https://github.com/Manish-A-04/KM-Gurukulam" },
-        { label: "live link", url: "https://kmgurukulam.in/" }
-      ],
-      desc: "Collaborated with a teammate to design and build a live website for a toddler school, currently deployed and used by the client for admissions.",
+      title: "Retail Sales Analysis & Forecasting",
+      tech: ['Python', 'Pandas', 'NumPy', 'Prophet', 'Power BI'],
+      link: "https://github.com/Manish-A-04/global-store-analytics",
+      desc: "Cleaned and structured a large retail transactions dataset, built a Facebook Prophet sales forecasting model, and delivered an interactive Power BI dashboard covering sales, profitability, and regional performance.",
       points: [
-        "Responsive Interface: Styled a fully responsive interface across the landing page, admissions form, and gallery sections, handling overall UI polish and layout.",
-        "Backend & Admin Dashboard: Set up Firebase and Supabase as backend services to store admission submissions, and built an admin dashboard to search, filter, and export applicant data to Excel."
+        "Data Preparation: Cleaned raw transaction records and engineered fields such as shipping duration and profit margin to support downstream analysis.",
+        "Forecasting & Reporting: Built a time series model using Facebook Prophet, then turned insights into a stakeholder-ready Power BI dashboard with regional breakdowns and trend views."
       ]
     },
     {
-      title: "AI Avatar Assistant System",
-      tech: ['FastAPI', 'SQLAlchemy', 'PostgreSQL', 'JWT', 'React', 'Axios', 'Vite'],
-      link: "https://github.com/Manish-A-04/ai-avatar",
-      desc: "Built the full-stack architecture for an AI avatar assistant, connecting a React frontend to an async FastAPI backend through JWT-secured REST APIs.",
+      title: "Power Generation Analysis",
+      tech: ['Microsoft Excel', 'Pivot Tables'],
+      link: "https://github.com/Manish-A-04/india-power-generation-analysis",
+      desc: "Consolidated seven months of official power generation data from India's Central Electricity Authority across 500+ power stations into a single, clean workbook with an executive KPI dashboard.",
       points: [
-        "Async Backend & Authentication: Designed authentication with access/refresh tokens and session handling, structuring the PostgreSQL schema using SQLAlchemy's async ORM with Alembic migrations.",
-        "Task Scheduler & Pipeline: Built a background task scheduler for automatic media cleanup and orchestrated a multi-stage processing pipeline (speech-to-text, LLM response, text-to-speech, lip-sync) behind a single API layer."
+        "Data Consolidation & Cleaning: Merged multi-source CEA data, removed duplicate summary rows, and computed metrics including target variance, target achievement %, and plant load factor per station.",
+        "Dashboard Design: Built pivot-table-driven charts and KPI cards revealing coal as the dominant source and showing the national generation target being exceeded overall."
       ]
     },
     {
-      title: "StudyGraphRAG",
-      tech: ['FastAPI', 'SQLAlchemy', 'React', 'TailwindCSS', 'Axios', 'Neo4j', 'GraphRAG', 'Gemini API'],
-      link: "https://github.com/Manish-A-04/StudyGraphRAG",
-      desc: "Built a full-stack study assistant with a FastAPI backend and React frontend that lets users upload PDF documents and query them through a Neo4j knowledge graph.",
+      title: "Social Media Comment Scraper",
+      tech: ['Python', 'PostgreSQL', 'AsyncPG', 'Langdetect'],
+      link: "https://github.com/Manish-A-04/reddit-yt-comments-scraper",
+      desc: "Built a scraping pipeline for Reddit and YouTube comments with rate limiting, structured PostgreSQL storage, language detection, and export options to JSONL, CSV, and Hugging Face dataset formats.",
       points: [
-        "Document Processing Worker: Designed asynchronous background workers to parse documents, extract entities and relationships, and generate embeddings without blocking the main API.",
-        "Conversational GraphRAG API: Built REST APIs for document upload, graph management, and conversational querying, combining retrieved graph context with an LLM to generate answers."
+        "Async Data Pipeline: Designed a PostgreSQL schema to store sessions, posts, and comments, with async inserts for efficiency and retry logic for reliability over long scraping sessions.",
+        "NLP Preprocessing & Export: Added text cleaning and language detection, then built flexible export options to support downstream ML dataset creation."
       ]
     },
     {
@@ -50,20 +47,10 @@ export default function Projects() {
         { label: "App Repo", url: "https://github.com/Manish-A-04/sql-easy-query" },
         { label: "Finetuning Script", url: "https://github.com/Manish-A-04/gemma3-finetuning" }
       ],
-      desc: "A full-stack AI database assistant that converts natural language into SQL queries across SQLite, PostgreSQL, MySQL, SQL Server, and Oracle using FastAPI and React.",
+      desc: "An AI-powered analytics assistant that translates natural language into SQL queries across five database dialects. Fine-tuned Gemma 3 4B using QLoRA for the text-to-SQL task, with SQL validation and AI-generated result summaries to make database querying accessible to non-technical users.",
       points: [
         "LLM Fine-Tuning: Fine-tuned Gemma 3 4B for Text-to-SQL using 4-bit QLoRA on the b-mc2/sql-create-context dataset and deployed the model locally using Ollama.",
         "Query Validation & Correction: Improved query reliability by implementing SQLGlot-based SQL validation, automatic query correction, and AI-generated summaries of query results."
-      ]
-    },
-    {
-      title: "Speech-to-Speech Conversational AI",
-      tech: ['OpenAI Whisper', 'Ollama', 'Kokoro TTS', 'eSpeak-NG', 'Gradio', 'PyAudio'],
-      link: "https://github.com/Manish-A-04/Speech-to-Speech",
-      desc: "Developed a fully local speech-to-speech AI assistant by integrating Whisper for speech recognition, Ollama for LLM inference, and Kokoro TTS with eSpeak-NG for voice synthesis.",
-      points: [
-        "Real-Time Audio Pipeline: Built a real-time audio pipeline to record speech, transcribe audio, generate streamed LLM responses, and synthesize natural voice output.",
-        "Interactive Gradio UI: Created an interactive Gradio interface for seamless voice conversations without relying on external cloud APIs."
       ]
     },
     {
@@ -74,6 +61,16 @@ export default function Projects() {
       points: [
         "Model Architecture: Designed a shared Transformer encoder with task-specific heads, attention-based intent pooling, and CRF-based slot decoding for structured prediction.",
         "End-to-End Pipeline: Implemented complete training, evaluation, and inference pipelines, enabling real-time multilingual intent and entity prediction."
+      ]
+    },
+    {
+      title: "StudyGraphRAG",
+      tech: ['FastAPI', 'SQLAlchemy', 'React', 'TailwindCSS', 'Axios', 'Neo4j', 'GraphRAG', 'Gemini API'],
+      link: "https://github.com/Manish-A-04/StudyGraphRAG",
+      desc: "Built a document analysis system that parses uploaded PDFs, extracts entities and relationships into a Neo4j knowledge graph, and enables conversational querying over the graph using an LLM.",
+      points: [
+        "Document Processing & Knowledge Graph: Designed async background workers to parse documents, extract entities and relationships, and populate a Neo4j graph — enabling structured knowledge retrieval from unstructured text.",
+        "Conversational GraphRAG API: Built REST APIs for document upload, graph management, and querying, combining retrieved graph context with an LLM to generate grounded answers."
       ]
     }
   ];
@@ -113,7 +110,7 @@ export default function Projects() {
               </div>
 
               <div className="md:text-right mt-6 md:mt-0 flex flex-col md:items-end gap-4">
-                {Array.isArray(project.link) ? (
+                {project.link === null ? null : Array.isArray(project.link) ? (
                   project.link.map((item, i) => {
                     const url = typeof item === 'object' ? item.url : item;
                     const label = typeof item === 'object' ? item.label : 'GitHub';

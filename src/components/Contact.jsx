@@ -7,7 +7,7 @@ export default function Contact() {
           I'm always interested in hearing about new projects, technical challenges, or research collaborations. 
         </p>
         <div className="flex flex-col md:flex-row justify-start items-stretch md:items-center gap-4">
-          <a className="flex justify-center items-center gap-2.5 font-display tracking-widest font-bold uppercase text-sm bg-accent text-bg hover:opacity-90 transition-opacity px-6 py-3 rounded-full" href="mailto:manissh2004@gmail.com">
+          <a className="flex justify-center items-center gap-2.5 font-display tracking-widest font-bold uppercase text-sm bg-accent text-bg hover:opacity-90 transition-opacity px-6 py-3 rounded-full" href="https://mail.google.com/mail/?view=cm&to=manissh2004@gmail.com" target="_blank" rel="noopener noreferrer">
             <span className="material-symbols-outlined text-[18px]">mail</span> Email Me
           </a>
           <a className="flex justify-center items-center gap-2.5 font-display tracking-widest font-bold uppercase text-sm bg-white/10 hover:bg-white/20 border border-white/10 transition-all px-6 py-3 rounded-full" href="https://linkedin.com/in/manish-a-47a791326" target="_blank" rel="noopener noreferrer">

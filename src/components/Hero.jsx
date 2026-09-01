@@ -8,11 +8,11 @@ export default function Hero() {
             B.Tech. in Artificial Intelligence &amp; Data Science
           </span>
           <span className="text-accent font-semibold text-lg md:text-xl block mt-2 tracking-wider">
-            Full Stack Development • AI
+            Data Science • Analytics • MIS
           </span>
         </h1>
         <p className="font-body-lg text-base md:text-lg font-normal leading-[1.75] text-fg/70 max-w-2xl mb-10">
-          I build web apps and AI tools from the ground up—from React frontends down to the APIs and databases behind them. I enjoy digging into technical problems, whether that means shipping a new feature or figuring out why a system is behaving the way it is.
+          I'm a B.Tech graduate in AI and Data Science with hands-on experience building predictive models, SQL-backed pipelines, and interactive dashboards. I enjoy turning raw data into clear insights through analysis, forecasting, and reporting. I'm actively seeking Data Science, Data Analyst, and MIS Analyst roles.
         </p>
         <div className="flex flex-wrap gap-4">
           <a className="bg-accent text-bg px-8 py-4 rounded-lg font-display tracking-widest font-bold uppercase text-sm hover:opacity-80 transition-opacity duration-300" href="#projects">
@@ -20,7 +20,7 @@ export default function Hero() {
           </a>
           <a
             className="border border-fg/30 text-accent px-8 py-4 rounded-lg font-display tracking-widest font-bold uppercase text-sm hover:border-accent transition-colors duration-300 inline-flex items-center gap-2"
-            href="/res.pdf"
+            href="/resume.pdf"
             download="Manish_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"

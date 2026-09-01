@@ -6,10 +6,10 @@ export default function About() {
           <h2 className="font-display tracking-wide font-extrabold text-3xl md:text-4xl mb-8">About Me</h2>
           <div className="space-y-6 text-fg/80 font-body-lg text-base md:text-lg font-normal leading-[1.75]">
             <p>
-              I'm a B.Tech graduate in Artificial Intelligence and Data Science who likes building software end-to-end. I enjoy working across the whole stack—from building clean React frontends to designing FastAPI backends, databases, and AI pipelines.
+              I'm a B.Tech graduate in Artificial Intelligence and Data Science. I enjoy working with data end-to-end — cleaning raw datasets, building SQL-backed reporting systems, and training ML models that surface patterns that matter.
             </p>
             <p>
-              Whether I'm shipping a new feature, tracing a bug back to its root cause, or setting up background tasks, I like getting under the hood to understand how everything works. I'm eager to bring this hands-on problem-solving approach to full-stack, AI, and support roles.
+              Whether I'm writing complex queries to answer a business question, building a predictive model with XGBoost or LightGBM, or designing a Power BI dashboard for stakeholders, I like understanding the full picture. I'm actively looking for Data Analyst, Data Science, and MIS Analyst roles where I can apply these skills to real-world problems.
             </p>
           </div>
         </div>
@@ -27,10 +27,10 @@ export default function About() {
           <div>
             <h4 className="font-display tracking-widest font-bold text-sm uppercase text-accent mb-3">Core Competencies</h4>
             <ul className="space-y-2">
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Full-Stack Web Development</li>
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">AI Engineering &amp; RAG Systems</li>
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Application Debugging &amp; Troubleshooting</li>
-              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">IT &amp; Systems Fundamentals (OS, TCP/IP)</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Exploratory Data Analysis &amp; Feature Engineering</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Predictive Modeling &amp; Time Series Forecasting</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">SQL, Database Design &amp; KPI Reporting</li>
+              <li className="font-body-lg text-base font-normal text-fg/80 custom-bullet">Dashboard Development (Power BI, Streamlit, Excel)</li>
             </ul>
           </div>
 
