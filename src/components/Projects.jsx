@@ -65,7 +65,7 @@ export default function Projects() {
     },
     {
       title: "StudyGraphRAG",
-      tech: ['FastAPI', 'SQLAlchemy', 'React', 'TailwindCSS', 'Axios', 'Neo4j', 'GraphRAG', 'Gemini API'],
+      tech: ['FastAPI', 'SQLAlchemy', 'Neo4j', 'Gemini API'],
       link: "https://github.com/Manish-A-04/StudyGraphRAG",
       desc: "Built a document analysis system that parses uploaded PDFs, extracts entities and relationships into a Neo4j knowledge graph, and enables conversational querying over the graph using an LLM.",
       points: [
