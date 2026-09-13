@@ -1,23 +1,33 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Delivery Delay Prediction",
-      tech: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'LightGBM', 'CatBoost', 'Optuna', 'SHAP', 'MLflow', 'Streamlit'],
-      link: "https://github.com/Manish-A-04/olist-late-delivery-prediction",
-      desc: "Analyzed e-commerce order and shipping data to identify drivers of late deliveries, from raw data cleaning through ensemble modeling to a deployable Streamlit app.",
-      points: [
-        "Modeling & Tuning: Trained and compared XGBoost, LightGBM, CatBoost, and Random Forest classifiers, tuned with Optuna and tracked across every run in MLflow for reproducibility.",
-        "Explainability & Deployment: Applied SHAP to surface the features driving predictions, then packaged the model into a Streamlit app for real-time inference on new orders."
-      ]
-    },
-    {
-      title: "Retail Sales Analysis & Forecasting",
-      tech: ['Python', 'Pandas', 'NumPy', 'Prophet', 'Power BI'],
+      title: "Sales Analysis and Forecasting",
+      tech: ['Python', 'Pandas', 'Prophet', 'Power BI'],
       link: "https://github.com/Manish-A-04/global-store-analytics",
       desc: "Cleaned and structured a large retail transactions dataset, built a Facebook Prophet sales forecasting model, and delivered an interactive Power BI dashboard covering sales, profitability, and regional performance.",
       points: [
-        "Data Preparation: Cleaned raw transaction records and engineered fields such as shipping duration and profit margin to support downstream analysis.",
-        "Forecasting & Reporting: Built a time series model using Facebook Prophet, then turned insights into a stakeholder-ready Power BI dashboard with regional breakdowns and trend views."
+        "Data Preparation: Cleaned and organized a large retail transactions dataset, calculating fields such as shipping duration and profit margin along the way.",
+        "Forecasting & Reporting: Converted the cleaned data into a time series format and built a sales forecasting model using Facebook Prophet, turning the analysis into an interactive Power BI dashboard covering sales, profitability, and regional performance."
+      ]
+    },
+    {
+      title: "Retail Intelligence Dashboard",
+      tech: ['Python', 'Pandas', 'Scikit-learn', 'Streamlit', 'Plotly'],
+      link: "https://github.com/Manish-A-04/retail-analytics",
+      desc: "An executive analytics and decision intelligence platform that uncovers the root drivers of margin erosion and delivery delays across 329,000+ transactions, featuring predictive modeling and policy simulation in Streamlit.",
+      points: [
+        "Root Cause & Margin Analysis: Analyzed 329,000+ retail transactions to trace why the business was running a $1.6M net loss despite $66.2M in gross sales, finding that discounts above 15% alone caused $4.09M of it, while late deliveries stemmed from promised delivery windows running shorter than actual transit times.",
+        "Predictive Modeling & Simulation: Built a logistic regression model to flag risky orders early, forecasted future sales using Holt-Winters exponential smoothing, and simulated a 15% discount cap that would turn the loss into a $6.4M profit gain, then wrapped it all into a Streamlit dashboard for stakeholders."
+      ]
+    },
+    {
+      title: "Business Performance & Profitability Analysis",
+      tech: ['Power BI', 'DAX'],
+      link: "https://github.com/Manish-A-04/sales-dashboard",
+      desc: "A three-page interactive Power BI reporting suite evaluating multi-year retail transactions to track revenue growth, pinpoint margin erosion from aggressive discounting, and map customer cohort behavior.",
+      points: [
+        "DAX Profitability Modeling: Built a three-page Power BI report on multi-year retail data to track revenue, margins, and discount impact, writing DAX measures that showed discounts above 20% drove the most order volume but almost no profit, with nearly 47% of orders selling at a loss.",
+        "Demographic & Operations Mapping: Broke revenue down by customer age and location, finding the 25-35 age group drove 64% of revenue, and mapped shipping times across major cities to confirm a steady 5-day fulfillment turnaround."
       ]
     },
     {
@@ -26,8 +36,18 @@ export default function Projects() {
       link: "https://github.com/Manish-A-04/india-power-generation-analysis",
       desc: "Consolidated seven months of official power generation data from India's Central Electricity Authority across 500+ power stations into a single, clean workbook with an executive KPI dashboard.",
       points: [
-        "Data Consolidation & Cleaning: Merged multi-source CEA data, removed duplicate summary rows, and computed metrics including target variance, target achievement %, and plant load factor per station.",
-        "Dashboard Design: Built pivot-table-driven charts and KPI cards revealing coal as the dominant source and showing the national generation target being exceeded overall."
+        "Data Consolidation & Cleaning: Combined seven months of official power generation data from India's Central Electricity Authority across 500+ power stations, removed duplicate summary rows, and calculated metrics such as target variance, target achievement percentage, and plant load factor per station.",
+        "Dashboard Design: Built pivot tables and an executive dashboard with KPI cards and charts, which showed coal as the largest source of power and the national generation target being exceeded overall."
+      ]
+    },
+    {
+      title: "Delivery Delay Prediction",
+      tech: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'LightGBM', 'CatBoost', 'Optuna', 'SHAP', 'MLflow', 'Streamlit'],
+      link: "https://github.com/Manish-A-04/olist-late-delivery-prediction",
+      desc: "Analyzed e-commerce order and shipping data to identify drivers of late deliveries, from raw data cleaning through ensemble modeling to a deployable Streamlit app.",
+      points: [
+        "Modeling & Tuning: Trained and compared XGBoost, LightGBM, CatBoost, and Random Forest classifiers, tuned with Optuna and tracked across every run in MLflow for reproducibility.",
+        "Explainability & Deployment: Applied SHAP to surface the features driving predictions, then packaged the model into a Streamlit app for real-time inference on new orders."
       ]
     },
     {
@@ -61,16 +81,6 @@ export default function Projects() {
       points: [
         "Model Architecture: Designed a shared Transformer encoder with task-specific heads, attention-based intent pooling, and CRF-based slot decoding for structured prediction.",
         "End-to-End Pipeline: Implemented complete training, evaluation, and inference pipelines, enabling real-time multilingual intent and entity prediction."
-      ]
-    },
-    {
-      title: "StudyGraphRAG",
-      tech: ['FastAPI', 'SQLAlchemy', 'Neo4j', 'Gemini API'],
-      link: "https://github.com/Manish-A-04/StudyGraphRAG",
-      desc: "Built a document analysis system that parses uploaded PDFs, extracts entities and relationships into a Neo4j knowledge graph, and enables conversational querying over the graph using an LLM.",
-      points: [
-        "Document Processing & Knowledge Graph: Designed async background workers to parse documents, extract entities and relationships, and populate a Neo4j graph — enabling structured knowledge retrieval from unstructured text.",
-        "Conversational GraphRAG API: Built REST APIs for document upload, graph management, and querying, combining retrieved graph context with an LLM to generate grounded answers."
       ]
     }
   ];
